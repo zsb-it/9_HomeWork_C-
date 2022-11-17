@@ -14,7 +14,7 @@ int SumNumbers(int numM, int numN)
 {
     if (numM == numN) return numM;
     else if (numM < numN) return numM + SumNumbers(numM + 1, numN);
-    else return numN + SumNumbers(numM, numN + 1);
+    return numN + SumNumbers(numM, numN + 1);
 }
 int res = SumNumbers(numberM, numberN);
 Console.WriteLine(res);
