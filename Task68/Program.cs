@@ -15,7 +15,7 @@ int FunctionAkerman(int m, int n)
 {
     if(m==0) return n+1;
     else if (m>0 && n==0) return FunctionAkerman(m-1, 1);
-    else return FunctionAkerman(m-1, FunctionAkerman(m, n-1));
+    return FunctionAkerman(m-1, FunctionAkerman(m, n-1));
 }
 
 int functionAkerman = FunctionAkerman(numberM, numberN);
